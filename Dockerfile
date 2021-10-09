@@ -25,4 +25,5 @@ RUN bundle install
 # ** [Optional] Uncomment this section to install additional packages. **
 # RUN apk update \
 #     && apk add --no-cache <your-package-list-here>
-CMD bundle exec jekyll serve
+CMD bundle exec jekyll serve --host 0.0.0.0
+# Run with docker run -p 80:4000 <image-name>
